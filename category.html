@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="./category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        .center-div {
+            display: grid;
+            color: white;
+            place-items: center;
+        }
+
+        .categories {
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="section-bg">
+        <div class="container">
+            <nav class="navbar sticky-top navbar-expand-lg section-bg">
+                <div class="container-fluid shawdow-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://preview.colorlib.com/theme/abcbook/assets/img/logo/logo.png.webp"
+                            class="img-fluid" alt="ABC Book Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item ms-lg-5 ps-lg-5">
+                                <a class="nav-link text-black fw-bold" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item ps-lg-4">
+                                <a class="nav-link text-black fw-bold" href="./category.html">Categories</a>
+                            </li>
+                            <li class="nav-item ps-lg-4">
+                                <a class="nav-link text-black fw-bold" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown ps-lg-4">
+                                <a class="nav-link dropbtn dropdown-toggle text-black fw-bold" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="#">Login</a>
+                                    <a href="./cart.html">Cart</a>
+                                    <a href="#">Checkout</a>
+                                    <a href="#">Book Details</a>
+                                    <a href="#">Blog Details</a>
+                                    <a href="#">Element</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ps-lg-4">
+                                <a class="nav-link text-black fw-bold" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item ps-lg-4">
+                                <a class="nav-link text-black fw-bold" href="#">Contect</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="banner center-div">
+            <div class="categories">
+                Book Category
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 border px-5">
+                <h3>Filter by Genres</h3>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        History
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Horror - Thriller
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Love Stories
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Science Fiction
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Biography
+                    </label>
+                </div>
+
+                <h3 class="my-4">Filter by  Price</h3>
+
+                <div class="d-lg-flex justify-content-start dropdown my-5">
+                    <button class="btn dropdown-toggle border rounded-5" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Filter by Rating
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item fw-bold" type="button">Filter by Rating</button></li>
+                        <li><button class="dropdown-item" type="button">5 Star Rating</button></li>
+                        <li><button class="dropdown-item" type="button">4 Star Rating</button></li>
+                        <li><button class="dropdown-item" type="button">3 Star Rating</button></li>
+                        <li><button class="dropdown-item" type="button">2 Star Rating</button></li>
+                        <li><button class="dropdown-item" type="button">1 Star Rating</button></li>
+                    </ul>
+                </div>
+
+                <h3 class="my-4">Filter by Publisher</h3>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Green Publications
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Anondo Publications
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Rinku Publications
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Sheba Publications
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Red Publications
+                    </label>
+                </div>
+
+                <h3 class="my-4">Filter by Author Name</h3>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Bustan Hyman
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Phil Harmonic
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Cam L. Toe
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Otto Matic
+                    </label>
+                </div>
+                <div class="form-check py-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Juan Annatoo
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="col-lg-8">
+                <div>
+                    <div class="d-lg-flex justify-content-end dropdown">
+                        <button class="btn dropdown-toggle border rounded-5" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Browse by popularity
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item fw-bold" type="button">Browse by popularity</button></li>
+                            <li><button class="dropdown-item" type="button">Name</button></li>
+                            <li><button class="dropdown-item" type="button">NEW</button></li>
+                            <li><button class="dropdown-item" type="button">old</button></li>
+                            <li><button class="dropdown-item" type="button">Price</button></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row row-cols-lg-3 published-items mt-4 ms-3">
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling7.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling8.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling6.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling9.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling7.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling8.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling6.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling4.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling9.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-item">
+                        <div class="image-box">
+                            <img src="https://preview.colorlib.com/theme/abcbook/assets/img/gallery/best_selling2.jpg.webp"
+                                height="100%" width="100%">
+                        </div>
+                        <div class="image-content bg-white pt-3 ps-3 pb-1 mb-5 border">
+                            <h4>Moon Dance</h4>
+                            <p>J.R Rain</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(120 Review)</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="center-btn">
+                        <button class="rounded-5 more-btn">Browse More</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="dot-img row m-0 center-div">
+            <div class="text-white text-center col-lg-6">
+                <h1>Join Newsletter</h1>
+                <p>Lorem started its journey with cast iron (CI) products in 1980. The initial main objective was to
+                    ensure pure water and affordable irrigation.</p>
+
+                <div class="d-lg-flex">
+                    <div class="d-grid">
+                        <form>
+                            <input type="email" id="email" name="email" placeholder="Enter your email"
+                                class="px-5 py-3 border-0 rounded-5 ms-lg-5 my-lg-0 my-3">
+                        </form>
+                    </div>
+
+                    <div class="d-grid">
+                        <button
+                            class="px-5 py-3 border-0 text-white fw-bold rounded-5 history-btn ms-lg-4 my-lg-0">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="box15-footer mt-5 pt-5">
+        <div class="container pt-5">
+            <div class="row row-cols-lg-4 pb-5">
+                <div>
+                    <img src="https://preview.colorlib.com/theme/abcbook/assets/img/logo/logo.png.webp"
+                        class="img-fluid" alt="ABC Book Logo">
+                    <p class="pt-3">Get the breathing space now, and we’ll extend your term at the other end year for
+                        go.</p>
+                    <div class="d-flex">
+                        <div class="icon1 center-div text-black">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="icon1 center-div text-black">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="icon1 center-div text-black">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="icon1 center-div text-black">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ps-lg-5">
+                    <h5 class="fw-bold pb-3">Book Category</h5>
+                    <p>History</p>
+                    <p>Horror - Thriller</p>
+                    <p>Love Stories</p>
+                    <p>Science Fiction</p>
+                    <p>Business</p>
+                </div>
+
+                <div class="mt-5 pt-2">
+                    <p>Biography</p>
+                    <p>Astrology</p>
+                    <p>Digital Marketing</p>
+                    <p>Software Development</p>
+                    <p>Ecommerce</p>
+                </div>
+                <div>
+                    <h5 class="fw-bold pb-3">Site Map</h5>
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>FAQs</p>
+                    <p>Blog</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+
+            <div class="copyright mt-5 mb-0">
+                <p>Copyright ©2024 All rights reserved | This template is made with by Colorlib</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

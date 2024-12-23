@@ -1,0 +1,120 @@
+.navbar {
+    background-color: #FEF4F4;
+}
+.dropbtn {
+    cursor: pointer;
+} 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+    /* z-index: 1;   */
+}
+.dropdown-content a {
+    color: black;
+    font-weight: bold;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;   
+}
+.dropdown-content a:hover {
+    color:red;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.section-bg {
+    background-color: #FEF4F4;
+}
+
+.banner {
+    width:100%;
+    height: 350px;
+    background-image: url("https://preview.colorlib.com/theme/abcbook/assets/img/hero/h2_hero1.jpg.webp");
+    background-repeat: no-repeat;
+}
+
+.rating i {
+    color:rgb(255, 87, 0);
+}
+
+.center-btn{
+    display: grid;
+    place-items: center;
+}
+
+.more-btn {
+    min-width: 130px;
+    padding: 17px 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid red;
+    color: red;
+  }
+  .more-btn:hover {
+    color: #fff;
+  }
+  .more-btn:hover:after {
+    color: #fff;
+    height: 100%;
+    bottom: 5px;
+
+  }
+  .more-btn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: red;
+  }
+
+  .more-btn:active {
+    top: 5px;
+  }
+
+  .history-btn {
+    background-color: red;
+}
+
+  .dot-img {
+    background-image: url("https://preview.colorlib.com/theme/abcbook/assets/img/gallery/section-bg1.jpg.webp");
+    min-height:350px;
+}
+
+.icon1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 0px;
+    opacity: 0.4;
+}
+
+.box15-footer {
+    background-color: #FEF4F4;
+
+}
+
+.copyright p{
+    text-align: center;
+}
